@@ -2,14 +2,14 @@ extends ../layout/index
 
 block contenido
     div.py-10
-        h1.text-center.font-extrabold.my-10.text-4xl.text-pigmentgreen Perfil de 
+        h1.text-center.font-extrabold.my-10.text-4xl.text-Battleshipgray Perfil de 
             span.font-normal.text-black Usuario
         
         // Header con botones
         .bg-white.shadow-md.fixed.top-0.left-0.w-full.z-10
             .flex.justify-between.items-center.px-6.py-4
                 // Botón de Regresar (agregado)
-                a.text-gray-500.text-sm(href="javascript:history.back()" class="bg-pigmentgreen hover:bg-celadon-50 text-white py-2 px-6 rounded-lg") Regresar
+                a.text-gray-500.text-sm(href="javascript:history.back()" class="bg-Battleshipgray hover:bg-celadon-50 text-white py-2 px-6 rounded-lg") Regresar
                 // Botón de Inicio (estilo de botón más compacto)
                 a(href="/" class="text-white bg-emerald-400 hover:bg-celadon py-2 px-6 rounded-lg") Inicio
                 // Botón de Cerrar Sesión
@@ -45,10 +45,10 @@ block contenido
                     .w-full.flex.justify-between
                         // Seleccionar Foto
                         form(id="foto-form", method="POST", action="/auth/usuario", enctype="multipart/form-data")
-                            label(for="foto_perfil" class="bg-pigmentgreen hover:bg-celadon-50 text-white py-2 px-6 rounded-lg cursor-pointer") 
+                            label(for="foto_perfil" class="bg-Battleshipgray hover:bg-celadon-50 text-white py-2 px-6 rounded-lg cursor-pointer") 
                                 Seleccionar Foto
                             input(id="foto_perfil" type="file" name="foto_perfil" accept="image/*" class="hidden")
 
                         // Botón de Actualizar Foto
                         form(id="foto-form-submit", method="POST", action="/auth/usuario", enctype="multipart/form-data")
-                            button(type="submit" class="bg-pigmentgreen hover:bg-celadon-50 text-white py-2 px-6 rounded-lg") Actualizar Foto
+                            button(type="submit" class="bg-Battleshipgray hover:bg-celadon-50 text-white py-2 px-6 rounded-lg") Actualizar Foto

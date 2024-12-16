@@ -3,7 +3,7 @@ block styles
     meta(name="csrf-token" content= csrfToken)
 block contenido
     div.py-10
-        h1.text-4xl.my-10.font-extrabold.text-center.text-Battleshipgray Bienes 
+        h1.text-4xl.my-10.font-extrabold.text-center.text-pigmentgreen Bienes 
             span.font-normal Raíces  
         h2.text-center.text-2xl.font-extrabold= pagina
 
@@ -18,7 +18,7 @@ block contenido
                                 div(class="sm:w-1/4 md:w-1/6") 
                                     img(src=`uploads/${propiedad.imagen}`, alt=`Imagen propiedad ${propiedad.titulo}` class="w-full block")
                                 div(class="sm:w-2/4 md-w-3/6 lg:w-4/6 space-y-3")
-                                    a(class="block text-2xl font-extrabold text-Battleshipgray truncate" href=`/propiedad/${propiedad.id}`)= propiedad.titulo
+                                    a(class="block text-2xl font-extrabold text-pigmentgreen truncate" href=`/propiedad/${propiedad.id}`)= propiedad.titulo
                                     a(class="text-sm text-black font-bold")= propiedad.categoria.nombre
                                     p(class="text-sm text-gray-500 font-bold flex items-center") 
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -54,7 +54,7 @@ block contenido
                         nav(class="relative z-0 inline-flex rounded-md shadow-md")
                             - var n = 1
                             while n <= paginas
-                                a(href=`/mis-propiedades?pagina=${n}` class=`${paginaActual == n ? 'bg-celadon-50 border-celadon-50 text-Battleshipgray  ' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50' } relative inline-flex items-center px-4 py-2 border text-sm font-medium`) 
+                                a(href=`/mis-propiedades?pagina=${n}` class=`${paginaActual == n ? 'bg-celadon-50 border-celadon-50 text-pigmentgreen  ' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50' } relative inline-flex items-center px-4 py-2 border text-sm font-medium`) 
                                     | #{n++}
         else 
             p.text-center No hay propiedades
